@@ -1,0 +1,452 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{besleyOriginsStateCapacity2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=57c77888db637677332c102812686993}{%
+           family={Besley},
+           familyi={B\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f1fa15cf0ff6f6015cc43a7429eab414}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Torsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{694cc4f94f43f89a4109d00bacb38383}
+      \strng{fullhash}{694cc4f94f43f89a4109d00bacb38383}
+      \strng{fullhashraw}{694cc4f94f43f89a4109d00bacb38383}
+      \strng{bibnamehash}{694cc4f94f43f89a4109d00bacb38383}
+      \strng{authorbibnamehash}{694cc4f94f43f89a4109d00bacb38383}
+      \strng{authornamehash}{694cc4f94f43f89a4109d00bacb38383}
+      \strng{authorfullhash}{694cc4f94f43f89a4109d00bacb38383}
+      \strng{authorfullhashraw}{694cc4f94f43f89a4109d00bacb38383}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Economic Review}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{title}{The Origins of State Capacity: Property Rights, Taxation, and Politics}
+      \field{volume}{99}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{1218\bibrangedash 1244}
+      \range{pages}{27}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Andrew\\Zotero\\storage\\N5MTJKVM\\Besley and Persson - 2009 - The Origins of State Capacity Property Rights, Taxation, and Politics.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/25592507
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/25592507
+      \endverb
+    \endentry
+    \entry{gilley2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b1b16fdb21786039bd237b36a8c264d}{%
+           family={Gilley},
+           familyi={G\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b1b16fdb21786039bd237b36a8c264d}
+      \strng{fullhash}{8b1b16fdb21786039bd237b36a8c264d}
+      \strng{fullhashraw}{8b1b16fdb21786039bd237b36a8c264d}
+      \strng{bibnamehash}{8b1b16fdb21786039bd237b36a8c264d}
+      \strng{authorbibnamehash}{8b1b16fdb21786039bd237b36a8c264d}
+      \strng{authornamehash}{8b1b16fdb21786039bd237b36a8c264d}
+      \strng{authorfullhash}{8b1b16fdb21786039bd237b36a8c264d}
+      \strng{authorfullhashraw}{8b1b16fdb21786039bd237b36a8c264d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What explains the nature of institutional change in post-1989 China? Dominant theories of institutional change focus on economic-rationalist, sociopolitical, or historical causes. Yet they have trouble explaining the pattern of institutional change in China. An alternative legitimacy-based perspective is proposed here that provides a more parsimonious and general theory of institutional change for China and potentially for other cases as well.}
+      \field{journaltitle}{Comparative Political Studies}
+      \field{number}{3}
+      \field{title}{Legitimacy and Institutional Change: The Case of China}
+      \field{volume}{41}
+      \field{year}{2008}
+      \field{pages}{259\bibrangedash 284}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1177/0010414007308020
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1177/0010414007308020
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1177/0010414007308020
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/0010414007308020
+      \endverb
+    \endentry
+    \entry{hansonStateCapacityResilience2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8e20f9eafbecd88a71247bb2aefead23}{%
+           family={Hanson},
+           familyi={H\bibinitperiod},
+           given={Jonathan\bibnamedelima K},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[Sage Publications, Ltd., Sage Publications, Inc.]}%
+      }
+      \strng{namehash}{8e20f9eafbecd88a71247bb2aefead23}
+      \strng{fullhash}{8e20f9eafbecd88a71247bb2aefead23}
+      \strng{fullhashraw}{8e20f9eafbecd88a71247bb2aefead23}
+      \strng{bibnamehash}{8e20f9eafbecd88a71247bb2aefead23}
+      \strng{authorbibnamehash}{8e20f9eafbecd88a71247bb2aefead23}
+      \strng{authornamehash}{8e20f9eafbecd88a71247bb2aefead23}
+      \strng{authorfullhash}{8e20f9eafbecd88a71247bb2aefead23}
+      \strng{authorfullhashraw}{8e20f9eafbecd88a71247bb2aefead23}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article discusses three main challenges to gaining a better understanding of whether state capacity contributes to the resilience of electoral authoritarian regimes. First, the concept of state capacity is multi-dimensional and can be entangled with regime organizational structures. Second, there is a range of different mechanisms through which elections may draw upon capacity in these different dimensions to affect authoritarian resilience. Third, good indicators of the dimensions of state capacity for empirical work are sorely lacking. To address these challenges, this article outlines the connections between extractive, coercive and administrative dimensions of state capacity with regard to how electoral authoritarian regimes address threats arising from society and from within the ruling elite. It then assesses different approaches to measuring these dimensions for empirical work.}
+      \field{issn}{0192-5121}
+      \field{journaltitle}{International Political Science Review / Revue internationale de science politique}
+      \field{number}{1}
+      \field{shorttitle}{State capacity and the resilience of electoral authoritarianism}
+      \field{title}{State capacity and the resilience of electoral authoritarianism: Conceptualizing and measuring the institutional underpinnings of autocratic power}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{39}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{17\bibrangedash 32}
+      \range{pages}{16}
+      \verb{file}
+      \verb JSTOR Full Text PDF:C\:\\Users\\Andrew\\Zotero\\storage\\WBAYPYH6\\Hanson - 2018 - State capacity and the resilience of electoral authoritarianism Conceptualizing and measuring the i.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/26956713
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/26956713
+      \endverb
+    \endentry
+    \entry{levi1988}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c2298ad45613223efc3119d20483819e}{%
+           family={Levi},
+           familyi={L\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of California Press}%
+      }
+      \strng{namehash}{c2298ad45613223efc3119d20483819e}
+      \strng{fullhash}{c2298ad45613223efc3119d20483819e}
+      \strng{fullhashraw}{c2298ad45613223efc3119d20483819e}
+      \strng{bibnamehash}{c2298ad45613223efc3119d20483819e}
+      \strng{authorbibnamehash}{c2298ad45613223efc3119d20483819e}
+      \strng{authornamehash}{c2298ad45613223efc3119d20483819e}
+      \strng{authorfullhash}{c2298ad45613223efc3119d20483819e}
+      \strng{authorfullhashraw}{c2298ad45613223efc3119d20483819e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Margaret Levi's wide-ranging theoretical and historical study demonstrates the importance of political relative to economic factors in accounting for revenue production policies.}
+      \field{isbn}{9780520067509}
+      \field{title}{Of Rule and Revenue}
+      \field{urlday}{21}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{1988}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/10.1525/j.ctt1pngtk
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/10.1525/j.ctt1pngtk
+      \endverb
+    \endentry
+    \entry{alma99147951620001452}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc5f8fa109fa63fd86a14e87970a504f}{%
+           family={North},
+           familyi={N\bibinitperiod},
+           given={Douglass\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Norton}%
+      }
+      \strng{namehash}{dc5f8fa109fa63fd86a14e87970a504f}
+      \strng{fullhash}{dc5f8fa109fa63fd86a14e87970a504f}
+      \strng{fullhashraw}{dc5f8fa109fa63fd86a14e87970a504f}
+      \strng{bibnamehash}{dc5f8fa109fa63fd86a14e87970a504f}
+      \strng{authorbibnamehash}{dc5f8fa109fa63fd86a14e87970a504f}
+      \strng{authornamehash}{dc5f8fa109fa63fd86a14e87970a504f}
+      \strng{authorfullhash}{dc5f8fa109fa63fd86a14e87970a504f}
+      \strng{authorfullhashraw}{dc5f8fa109fa63fd86a14e87970a504f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At the core of Professor North's investigation is the question of property rights, the arrangements individuals and groups have made through history to deal with the fundamental economic problem of scarce resources. In six theoretical chapters, Professor North examines the structure of economic systems, outlines an economic theory of the state and the ideologies that undergird various modes of economic organization, and then explores the dynamic forces such as new technologies that cause institutions to adapt in order to survive. With this analytical framework in place, major phases in Western history come under careful reappraisal, from the origins of agriculture and the neolithic revolution through the political economy of the ancient and medieval worlds to the industrial revolution and the economic transformations of the twentieth century.}
+      \field{booktitle}{Structure and change in economic history}
+      \field{edition}{1st ed.}
+      \field{isbn}{0393014789}
+      \field{title}{Structure and change in economic history}
+      \field{year}{1981}
+      \verb{urlraw}
+      \verb https://bac-lac.on.worldcat.org/oclc/300384121
+      \endverb
+      \verb{url}
+      \verb https://bac-lac.on.worldcat.org/oclc/300384121
+      \endverb
+      \keyw{Economic history}
+    \endentry
+    \entry{olson1993}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=df106a52ba6207f8c20a6138f9025954}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Mancur},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[American Political Science Association, Cambridge University Press]}%
+      }
+      \strng{namehash}{df106a52ba6207f8c20a6138f9025954}
+      \strng{fullhash}{df106a52ba6207f8c20a6138f9025954}
+      \strng{fullhashraw}{df106a52ba6207f8c20a6138f9025954}
+      \strng{bibnamehash}{df106a52ba6207f8c20a6138f9025954}
+      \strng{authorbibnamehash}{df106a52ba6207f8c20a6138f9025954}
+      \strng{authornamehash}{df106a52ba6207f8c20a6138f9025954}
+      \strng{authorfullhash}{df106a52ba6207f8c20a6138f9025954}
+      \strng{authorfullhashraw}{df106a52ba6207f8c20a6138f9025954}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Under anarchy, uncoordinated competitive theft by "roving bandits" destroys the incentive to invest and produce, leaving little for either the population or the bandits. Both can be better off if a bandit sets himself up as a dictator--a "stationary bandit" who monopolizes and rationalizes theft in the form of taxes. A secure autocrat has an encompassing interest in his domain that leads him to provide a peaceful order and other public goods that increase productivity. Whenever an autocrat expects a brief tenure, it pays him to confiscate those assets whose tax yield over his tenure is less than their total value. This incentive plus the inherent uncertainty of succession in dictatorships imply that autocracies will rarely have good economic performance for more than a generation. The conditions necessary for a lasting democracy are the same necessary for the security of property and contract rights that generates economic growth.}
+      \field{issn}{00030554, 15375943}
+      \field{journaltitle}{The American Political Science Review}
+      \field{number}{3}
+      \field{title}{Dictatorship, Democracy, and Development}
+      \field{urlday}{21}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{volume}{87}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \field{pages}{567\bibrangedash 576}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2938736
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2938736
+      \endverb
+    \endentry
+    \entry{tillyCoercionCapitalEuropean2017}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=763e94a483a60e18a7c484bc3049c6f0}{%
+           family={Tilly},
+           familyi={T\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{763e94a483a60e18a7c484bc3049c6f0}
+      \strng{fullhash}{763e94a483a60e18a7c484bc3049c6f0}
+      \strng{fullhashraw}{763e94a483a60e18a7c484bc3049c6f0}
+      \strng{bibnamehash}{763e94a483a60e18a7c484bc3049c6f0}
+      \strng{authorbibnamehash}{763e94a483a60e18a7c484bc3049c6f0}
+      \strng{authornamehash}{763e94a483a60e18a7c484bc3049c6f0}
+      \strng{authorfullhash}{763e94a483a60e18a7c484bc3049c6f0}
+      \strng{authorfullhashraw}{763e94a483a60e18a7c484bc3049c6f0}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This chapter looks at how widely the trajectories of European state formation varied as a function of the geography of coercion and capital, the organization of major power-holders, and pressure from other states. It examines how a long series of unequal struggles among rulers, other powerholders, and ordinary people created specific state institutions and claims on the state. Great power competition and intervention play no more than supporting parts in any particular coup and in the maintenance of any particular military regime. The chapter explains how much the eventual organizational convergence of European states resulted from competition among them, both within Europe and in the rest of world. After centuries of divergences among capital-intensive, coercion-intensive, and capitalized-coercion paths of state formation, European states began to converge a few centuries ago; war and mutual influence caused convergence. World War {II} transformed the state system and the states within it.}
+      \field{booktitle}{Collective Violence, Contentious Politics, and Social Change}
+      \field{note}{Num Pages: 15}
+      \field{title}{Coercion, Capital, and European States, A.D. 990–1990}
+      \field{year}{2017}
+      \field{dateera}{ce}
+    \endentry
+    \entry{xuGeneralizedSyntheticControl2017b}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=525088c4272a93c67f7c5e47f118568c}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yiqing},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{525088c4272a93c67f7c5e47f118568c}
+      \strng{fullhash}{525088c4272a93c67f7c5e47f118568c}
+      \strng{fullhashraw}{525088c4272a93c67f7c5e47f118568c}
+      \strng{bibnamehash}{525088c4272a93c67f7c5e47f118568c}
+      \strng{authorbibnamehash}{525088c4272a93c67f7c5e47f118568c}
+      \strng{authornamehash}{525088c4272a93c67f7c5e47f118568c}
+      \strng{authorfullhash}{525088c4272a93c67f7c5e47f118568c}
+      \strng{authorfullhashraw}{525088c4272a93c67f7c5e47f118568c}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Difference-in-differences ({DID}) is commonly used for causal inference in time-series cross-sectional data. It requires the assumption that the average outcomes of treated and control units would have followed parallel paths in the absence of treatment. In this paper, we propose a method that not only relaxes this often-violated assumption, but also unifies the synthetic control method (Abadie, Diamond, and Hainmueller 2010) with linear fixed effects models under a simple framework, of which {DID} is a special case. It imputes counterfactuals for each treated unit using control group information based on a linear interactive fixed effects model that incorporates unit-specific intercepts interacted with time-varying coefficients. This method has several advantages. First, it allows the treatment to be correlated with unobserved unit and time heterogeneities under reasonable modeling assumptions. Second, it generalizes the synthetic control method to the case of multiple treated units and variable treatment periods, and improves efficiency and interpretability. Third, with a built-in cross-validation procedure, it avoids specification searches and thus is easy to implement. An empirical example of Election Day Registration and voter turnout in the United States is provided.}
+      \field{issn}{1047-1987, 1476-4989}
+      \field{journaltitle}{Political Analysis}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Generalized Synthetic Control Method}
+      \field{title}{Generalized Synthetic Control Method: Causal Inference with Interactive Fixed Effects Models}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{25}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{57\bibrangedash 76}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1017/pan.2016.2
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Andrew\\Zotero\\storage\\338KSFA7\\Xu - 2017 - Generalized Synthetic Control Method Causal Inference with Interactive Fixed Effects Models.pdf:application/pdf;PDF:C\:\\Users\\Andrew\\Zotero\\storage\\7UVGXDXJ\\Xu - 2017 - Generalized Synthetic Control Method Causal Inference with Interactive Fixed Effects Models.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/political-analysis/article/generalized-synthetic-control-method-causal-inference-with-interactive-fixed-effects-models/B63A8BD7C239DD4141C67DA10CD0E4F3
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/political-analysis/article/generalized-synthetic-control-method-causal-inference-with-interactive-fixed-effects-models/B63A8BD7C239DD4141C67DA10CD0E4F3
+      \endverb
+    \endentry
+    \entry{yang2004}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=a0414bb4a6735d9a76b7cec9b1cf1a49}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Dali},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Press}%
+      }
+      \strng{namehash}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \strng{fullhash}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \strng{fullhashraw}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \strng{bibnamehash}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \strng{authorbibnamehash}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \strng{authornamehash}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \strng{authorfullhash}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \strng{authorfullhashraw}{a0414bb4a6735d9a76b7cec9b1cf1a49}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780804754934}
+      \field{title}{Remaking the Chinese Leviathan: Market Transition and the Politics of Governance in China}
+      \field{year}{2004}
+    \endentry
+    \entry{yenImperativeStateCapacity2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=99e1be8c2fe9b2a470b75649aaeab0bc}{%
+           family={Yen},
+           familyi={Y\bibinitperiod},
+           given={Wei-Ting},
+           giveni={W\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=f88dbbbf46e44ec52d175b9eed14d0ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Li-Yin},
+           giveni={L\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=8bf199832dfa2d54d9aae6a2b9eed3a3}{%
+           family={Won},
+           familyi={W\bibinitperiod},
+           given={Eunji},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7caf19bd53c74dcefc5bf925b725872b}{%
+           family={{Testriono}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{8463e1316f0587822dd70fd31510992d}
+      \strng{fullhash}{ccff2e6fee4c3d24d6d1481c27aed132}
+      \strng{fullhashraw}{ccff2e6fee4c3d24d6d1481c27aed132}
+      \strng{bibnamehash}{8463e1316f0587822dd70fd31510992d}
+      \strng{authorbibnamehash}{8463e1316f0587822dd70fd31510992d}
+      \strng{authornamehash}{8463e1316f0587822dd70fd31510992d}
+      \strng{authorfullhash}{ccff2e6fee4c3d24d6d1481c27aed132}
+      \strng{authorfullhashraw}{ccff2e6fee4c3d24d6d1481c27aed132}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Preexisting political institutions influence governments' responses to public health crises in different ways, creating national variations. This article investigates how state capacity, a country's fundamental ability to organize bureaucracy and allocate societal resources, affects the timing and configuration of governments' {COVID}-19 policy responses. Through comparative case study analysis of five of China's neighboring countries early in the {COVID}-19 crisis, the paper shows that more-capable states (Singapore, South Korea, Taiwan) initiated crisis response faster, mobilized national resources more extensively, and utilized diverse policy tools when the virus risk level was still low. In contrast, low-capacity states (Thailand and Indonesia) were more reactive in handling the crisis, limited their focus to border-related measures, and were more constrained in the types of tools they could employ. The paper points to the importance of studying the {COVID}-19 response process rather than the outcome (i.e., confirmed cases/deaths) when unpacking the impacts of political institutions in public health crises.}
+      \field{issn}{1468-0491}
+      \field{journaltitle}{Governance}
+      \field{langid}{english}
+      \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/gove.12695}
+      \field{number}{3}
+      \field{shorttitle}{The imperative of state capacity in public health crisis}
+      \field{title}{The imperative of state capacity in public health crisis: Asia's early {COVID}-19 policy responses}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{35}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{777\bibrangedash 798}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1111/gove.12695
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Andrew\\Zotero\\storage\\QL3VBDKU\\Yen et al. - 2022 - The imperative of state capacity in public health crisis Asia's early COVID-19 policy responses.pdf:application/pdf;Snapshot:C\:\\Users\\Andrew\\Zotero\\storage\\MRKU64P6\\gove.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/gove.12695
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/gove.12695
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

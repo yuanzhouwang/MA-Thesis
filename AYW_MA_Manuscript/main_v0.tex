@@ -1,0 +1,238 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Please note that whilst this template provides a 
+% preview of the typeset manuscript for submission, it 
+% will not necessarily be the final publication layout.
+%
+%% Document class options: (**...** are defaults)
+%  - bibtex: Uses bibtex+natbib, chicago.bst 
+%  - biblatex: Uses biblatex-chicago
+%      You MUST select one of the above two options, depending
+%      on whether you prefer bibtex or biblatex. This template
+%      contains code that uses bibtex.
+%  - twocolumn: Switch to two column for main text
+%  - singlespace/onehalfspace/**doublespace**: 
+%         changes line spacing for main text
+%  - blind/**nonblind**: Anonymises authors 
+%         and affiliations, or not
+%  - autowc: Automatically inserts a word count
+%         after the abstract, using texcount. 
+%         The abstract is ignored. 
+%         NOTE THAT THIS WILL ONLY WORK IF YOU HAVE  
+%         INSTALLED TEXCOUNT, AND HAVE ENABLED --shell-escape
+%         OR --enable-write18. (These will work on Overleaf.)
+%         If you get an error about "texcount not found", delete
+%         the autowc option, and manually specify the wordcount 
+%         with \totalwordcount{xxx}.
+%%% autowc may cause longer compilation time. You can 
+%%% disable it first while actively editing, and only
+%%% enable it when you're ready to take stock and check
+%%% on your work.
+\documentclass[bibtex,nonblind]{apsr_submission}
+% \totalwordcount{500}
+
+%% Example alternative options with everything the opposite of the above: (DO NOT USE AUTOWC WITH BIBLATEX; the word count will be greatly over-reported)
+% \documentclass[biblatex,nonblind,singlespace,twocolumn]{apsr_submission}
+
+\title{Resilience-Maximizing States}
+
+\author{Andrew Wang}
+       {University of Washington}
+       {}
+
+%% These are used for the headers
+\runningtitle{Resilience-Maximizing States}
+\runningauthor{Andrew Wang} 
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{rotating}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\begin{frontmatter}
+\begin{abstract}
+Why do states provide public goods? The existing literature generally provides revenue-maximizing explanations: the provision of public goods increases long-term revenue gains by improving market performance and by reducing the costly coercion required to generate revenue. I argue, however, that existing revenue-maximizing models belie a revenue-resilience tradeoff; states provide public goods to balance revenue and resilience. I identify one state (China) that should find net utility in the provision of public goods itself, *sans* any revenue effects. This problem is difficult to verify because a stationary revenue-maximizing state may behave identically to a resilience-maximizing state if the revenue spike is long-term, if it is dispersed, or if existing state capacity in the affected region is weak. I identify an exogenous, short-term, localized growth in a region with strong public goods provision: Inner Mongolia's economic boom following Chinese export restrictions on Rare Earth Elements from 2010-2011. In this case, I find that China's national government was not revenue maximizing but resilience maximizing.
+\end{abstract}
+\end{frontmatter}
+%%% DO NOT REMOVE THIS LINE. For automatic word count.
+%TC:endignore
+
+\section{Introduction}
+
+\dropcap{Why} do states provide public goods? The existing literature generally provides revenue-maximizing explanations: the provision of public goods increases long-term revenue gains by improving market performance and by reducing the costly coercion required to generate revenue. In this view, states extracting revenue are constrained by their bargaining power and the transaction costs of enforcing their policies \cite{levi1988}. States vary in their extractive capacity depending on the design of their extractive institutions, their time horizon, and their state capacity. They further vary by political context, including their tax base and the influence and structure of political coalitions.
+
+However, with some simplification, I suppose that states optimize primarily on two parameters: the tax rate and the level of public goods provision. The other factors are either quite static (time horizon, political context) or measurable as tax rate and public goods provision (institutional design, state capacity). While raising the tax rate increases revenue, taxing too high diminishes the population's productivity and willingness to comply, raising the cost of extracting revenue. Thus, Levi \cite{levi1988} demonstrates that there exists an optimal revenue-maximizing tax rate. Providing public goods can increase state capacity, facilitating the state's control over the supply of coercive, economic, or political resources. It also reduces transaction costs of enforcement by encouraging quasi-voluntary compliance by signaling the fairness and utility of paying taxes, particularly when individuals see that many others are also paying their taxes.
+
+Providing public goods reduces the costs of enforcement through disincentivizing free-riding. However, it creates another revenue problem - the provision of public goods is itself costly; though exhausting all revenue in the provision of public goods (or other state capacity) might maximize quasi-voluntary compliance and thus minimize costs of enforcing tax collection, the state is left with little revenue to devote to other purposes. A true revenue-maximizing state therefore maximizes the surplus revenue.
+
+\subsection{The Resilience-Maximizing State}
+
+While it is rational for the state to revenue-maximize, it is at least equally plausible that states should prioritize their own survival. This assumption, in fact, underlies the majority of theories in International Relations ([CITE WALTZ]). In today's international context, even roving bandits cannot actually 'rove' as they please--a state that maximizes their short-term revenue extraction but does not survive finds it challenging to maintain the gained revenue after their collapse, even if they somehow 'rove' to extract from a different tax base or by renegotiating an extractive contract with the same tax base. The former elites of recently-collapsed states have had a difficult time maintaining their wealth.
+
+Survival of the state aligns with existing traditions in political economy. Tilly: states extract to survive external competition. North: survival of the dominant coalition matters more than immediate predation. [expand on these two with citations]
+
+Even Levi herself incorporates the state's interest in survival as the state is constrained by its bargaining power relative to the bargaining power of agents and constituents. However, North and Levi's theories frame survival as a necessary condition in the state's pursuit of revenue. "Certainly, [rulers] are not always choosing the policy that produces the most revenue...Holding the office of ruler is the sine qua non of rule. This self-evident fact can be restated in terms of two observable and potentially testable factors: the rulers' discount rates and their need to create and sustain quasi-voluntary compliance" (Levi pg. 14). But, because the discount rate is exogenous and quasi-voluntary compliance is determined wholly by the tax rate and public goods, the state's concern for survival is exogenous conditional on the tax rate and public goods.
+
+I posit that states do not just care about survival, but about resilience, which here I define as the minimum coercion required to maintain stability. In later sections, I will demonstrate that existing definitions of resilience--as legitimacy performance or as state capacity--either fall short of my definition or are analytically the same. To be clear, resilience is not simply whether a state will survive or fail nor is it the probability that it will survive or fail. Investments in resilience are not investments in the probability of regime survival, but investments in reducing the coercive cost required to maintain the status quo. Levi's central insight -- that public goods are necessary for revenue extraction by providing quasi-voluntary compliance -- remains important. The distinction in this paper is that some states may value public goods not only because they improve extraction, but because they directly improve resilience. Whereas Levi introduces quasi-voluntary compliance as a constraint on revenue extraction, I argue it may be better understood as an independent object of maximization.
+
+I will provide a potential formalization of Levi's theory of a revenue-maximizing state constrained by bargaining power and transaction costs. I then propose a modification to the state's objective function that accounts for the dual goal of a state that jointly maximizes resilience and revenue, which captures the logic of a revenue-resilience tradeoff. I then consider these models in the context of a central state that maximizes an objective function that is heterogeneous across many regions. By applying this final model to analyze the expected outcomes of a localized, short-term windfall in China's Inner Mongolia province, I provide experimental evidence that China is resilience-maximizing.
+
+\section{Revenue and Resilience in China}
+
+[This section is under construction.]
+
+Economic Elite-dominated: Revenue-maximization. Party-dominated: Resilience maximization.
+
+China's post-1989 economic development is a prime example of a state for which the question of survival is not only especially salient, but particularly tied to its economy.
+
+\subsection{Resilience, Legitimacy, and State Capacity}
+
+Gilley \cite{gilley2008} argues that China's institutional development is best explained by the state's pursuit of “performance legitimacy”. The Chinese Communist Party secures popular support not through democratic processes, but through the delivery of tangible outcomes such as economic growth and public goods provision. This utility is political, not economic—state leaders perceive social provision as essential to quelling dissent and maintaining order. In the case of local governments, Yang \cite{yang2004} observes that the cadre evaluation system incentivizes the over-provision of public services, especially in sanitation and transport.
+
+The concept of resilience is distinct from the common use of the word in the literature to mean some form of either legitimacy and state capacity. Hanson \cite{hansonStateCapacityResilience2018}, for instance, defines resilience as a state's capacity to adapt to crises by mobilizing resources and governance tools. Yen \cite{yenImperativeStateCapacity2022} likewise frames resilience as how systems adapt under the shocks induced by the COVID pandemic. Other authors (cite?) have focused on state legitimacy in resilience.
+
+[Expand here! - need to emphasize the intuitive distinction between resilience and state capacity and legitimacy. In particular, explain that legitimacy is equivalent to quasi-voluntary compliance]
+
+[Expand here! - need to further support face validity of resilience being part of China's utility fxn. Use China course readings from Susan]
+
+Many accounts of state resilience apply to 'authoritarian' resilience. While the case I focus on here is specifically an authoritarian country, there is nothing in this model that inherently constrains it to autocracies.
+
+In proposing the revenue-maximizing account of the state, Olson \cite{olson1993} identifiesd 'roving' and 'stationary' bandits, with the key distinction being how much a state discounts future gains, and whether the state holds an encompassing interest in the markets. A state that heavily discounts future gains and whose revenue generation depends little on market performance is a 'roving' bandit--driven by fears that their rule is unstable, these states aim to extract maximium value in the short-term. A state that discounts future gains very little, and whose revenue generation depends more on market performance, is a 'stationary' bandit; stable rule enables these states to extract maximum value in the long-term, and thus invest in future gains through stronger institutions, public goods, and other state capacity. But the obvious reality today is that states generally are and want to remain stationary.
+
+I do not consider the distinction Olson \cite{olson1993} draws between democracies and autocracies. His argument is that democracies have more encompassing interests and face institutional checks, which constrain predation and promote long-term prosperity. However, whether democracies' or autocracies' utility functions correspond more closely with the population's utility function is irrelevant to the question of whether these states are revenue-maximizing. I look only at whether an autocratic state is revenue-maximizing or resilience-maximizing.
+
+
+\section{Theory}
+
+In simple terms, a state plays the following game: First, the state chooses a tax rate $\tau \in [0,1]$, which negatively affects national output $Y(\tau)$. Let $Y(\tau) = A(1-\tau)^{ \alpha} \quad \alpha \in (0,1)$, where $A$ is some measure of total factor productivity and $\alpha$ is the productivity elasticity of taxation. The state's tax revenue $R_0(\tau)=\tau Y(\tau)$ is a fraction of the national output. This now provides a Laffer-curve-like relationship between revenue and taxation that reflects the intuition that raising the tax rate increases revenue as a proportion of national output, but raising the tax rate too high reduces national output.
+
+We also consider that providing public goods requires some cost proportional to the amount of public goods provided. The state's revenue is therefore Thus net revenue, or profit, is $R(\tau, G) = R_0(\tau)-\pi_G G$, where $\pi_G$ is the price of public goods. Moreover, increasing public goods provision also improves total factor productivity with diminishing returns, hence $A = aG^\beta \quad \beta \in (0,1)$.
+
+Following Levi\cite{levi1988}, the tax rate must be enforced, and therefore any tax rate also requires a level of coercion $C(\tau, G)$ which is increasing with $\tau$ and decreasing with diminishing returns in public goods provision $G \in [0, R]$. Higher tax rates, \textit{ceteris paribus}, require more coercion to enforce, while providing more public goods improves quasi-voluntary compliance with diminishing returns and therefore reduces the coercion required to actually extract the tax revenue. This coercion function should also satisfy boundary conditions $\lim_{\tau \rightarrow 1^-} C(\tau,G) \rightarrow \infty$ and $C(0,R) = 0$. That is, the state requires an arbitrarily extreme level of coercion to enforce a tax rate of 100\%, while it requires no coercion to enforce a tax rate of zero. 
+
+A simple function that satisfies these conditions would be $C(\tau, G)=c \tau(1-\tau)^{-\gamma} G^{-\zeta} \quad \gamma > 0, \zeta \in (0,1)$ and $A=aG^\beta \quad \beta \in (0,1)$. Perhaps conveniently, this function also satisfies $\lim_{G \rightarrow 0^-} C(\tau, G) \rightarrow \infty$, which would imply that taxation with no public goods whatsoever should also be arbitrarily difficult to enforce, much like a tax rate of 100\%.
+
+The state's objective function, then, is to maximize revenue $R(\tau, G)$ subject to some constraint on coercion. This constraint arises because increasing coercion increases political instability, and the risk of political
+
+
+$C(\tau, G) \leq C_{\text{max}}$, where the maximum feasible level of coercion $C_{\text{max}}$ is assumed to be exogenous.
+
+\begin{align*} \label{model1}
+\max_{\tau, G} R(\tau, G) \quad \text{s.t.} \quad C(\tau, G) \leq C_{\text{max}}
+\end{align*}
+
+Revenue is strictly concave in $G$ for any fixed tax rate, ensuring a unique interior optimum. Holding the tax rate fixed, the state's optimal level of public goods provision is where their marginal contribution to revenue equals their direct marginal cost. For sufficiently large $G$, the direct fiscal cost term $-G$ eventually dominates because $\beta<1$, so revenue also declines for excessive public goods provision. Together these conditions imply that the state faces an interior optimization problem in both $\tau$ and $G$.
+
+[Expand: what is the effect of a positive exogenous output shock $\epsilon$ on revenue if we now use $R_0'(\tau) = R_0(\tau) + \epsilon$? It should increase the revenue proportionally to the tax rate, increase the marginal payoff to taxation. It should not directly alter the marginal value of public goods provision. Any increase in optimal public goods provision following a positive shock occurs indirectly through the induced change in the optimal tax rate.]
+
+I now consider a resilience term of the objective function. Intuitively, public goods improve resilience while extraction weakens resilience. If resilience were dependent only on public goods, then it could be simply modeled as a selective incentive on the objective function of the state, i.e. a $+G$ term. A more nuanced view, however, is that the a state's excess coercive capacity increases in public goods and decreases in the tax rate. The excess coercive capacity then increases with total coercive capacity but decreases in the coercion needed for extraction, as defined in \ref{model1}. Thus, the state's new objective function is
+
+\begin{equation}\label{model2}
+    \max_{\tau, G} R(\tau, G) + \phi\big(C_{\text{max}} - C(\tau, G)\big),
+\end{equation}
+
+where $\phi$ is the relative weight that a state places on resilience compared to revenue.
+
+There is a clear parallel here between this specification and the revenue-maximizing specification (Expression \ref{model1}). In fact, mathematically the two are equivalent, where the above model (Expression \ref{model2}) simply incorporates the Lagrange multiplier to solve the constrained optimization problem. The crucial distinction, however, is that rather than a Lagrange multiplier, which would represent an endogenous shadow price of coercion, the parameter $\phi$ is exogenous and depends on the state's own preferences.
+
+Thus the problem of jointly maximizing resilience and revenue does not decompose into a maximization problem of revenue.
+
+\subsection{The Revenue-Resilience Tradeoff}
+
+There exists a tradeoff between resilience and maximization that arises for two reasons. First, resilience increases in public goods (per the logic of quasi-voluntary compliance), while surplus revenue, past a certain point, decreases in public goods due to the cost of providing them. Second, resilience and revenue extraction require coercion--the former requires surplus coercive capacity, while the latter uses up this coercive capacity. Increasing public goods can improve the coercive capacity of the state and reduce the coercion required for revenue extraction.
+
+As mentioned, the difference between a revenue-maximizing specification and specification wherein the state jointly maximizes revenue and resilience is wholly in whether the Lagrangian Multiplier is exogenous or not. If the coercion constraint does not bind -- that is if the state is coercing below its maximum capacity -- then the revenue-maximizing specification gives $\phi=0$, so resilience has no marginal value beyond any potential revenue effects. On the other hand, a joint maximizer of revenue and resilience can have a positive $\phi$ even when the state is nowhere near their maximum coercive capacity.
+
+An example of equi-revenue curves for the utility surface of a state (or region), according to expression \ref{model2}, are presented in \ref{fig:dmr-contours}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{POLS503Final_IMG1.png}
+    \caption{}
+    \label{fig:dmr-contours}
+\end{figure}
+
+\subsection{The Effect of a Revenue Shock on a Non-Unitary State}
+
+I now consider the effect of discount rates and disparate revenues across different regions. For simplicity, I assume there are two regions, one with high public goods provision (region $A$) and one with low public goods provision (region $B$).
+
+In this context, how does a central revenue-maximizing state respond to an exogenous revenue shock--that is, those that do not come from a change in public goods provision or tax rate--that increases their revenue in region $A$? On the one hand, states can increase their capacity to capture increased revenue. Where we previously assumed no shock ($\epsilon = 0$), we now consider $R(\tau, G, \epsilon)$. In this case, a sudden increase in $Y$ by $\epsilon > 0$ raises the optimal tax rate \footnote{This is evident as
+$$
+\frac{\partial^2 R}{\partial \tau \, \partial \epsilon} = a G^\beta
+$$
+, so the marginal effect of $\tau_A$ on $R$ increases linearly with $\epsilon$, which means $\tau^*_A$ is greater.} and public goods provision. Since tax revenue is positively proportional to $G$ and coercion cost is negatively proportional to $G$, $G^*_A$ also increases with $\epsilon$. At the same time, however, the state can now invest $\epsilon$ into region $B$, which on its own increases revenue by reducing the cost of coercion (or, in Levi's terminology \cite{levi1988}, improving quasi-compliance). The question, then, is really whether the potential increase in revenue from investing in $B$, represented by shifting $B$ to $B'$, is greater than the potential increase in revenue from capturing more of $A$, represented by shifting $A$ to $A'$. Evidently, because of the diminishing marginal returns of increasing public goods provision on revenue, the state should prefer investing in $B$. [Still need to incorporate discount rate, but the idea is that more permanent shocks reduce or flip this gap.]
+
+
+Reinvesting gained revenue into public goods provision in an attempt to improve quasi-compliance is only worthwhile for a revenue-maximizing state if either the revenue shock is caused by economic growth that is dispersed or, if it is localized, the marginal effect on revenue of investment is higher in the growing region than in another region. In many cases, another poorer region might still benefit more from investment in public goods and state capacity than even the region experiencing an economic shock, if only because marginal returns diminish on public goods and state capacity investment.
+
+\subsection{Selective Incentives for Public Goods Provision}
+
+*Still building this model - Resilience-maximizing states incorporate some selective incentive for public goods provision, which reduces the gap in utility gains from reinvesting in A vs B*
+
+On the other hand, states may decide to decrease or leave unchanged their investment in public goods provision or general state capacity. This is true if, as mentioned, the economic growth is localized and marginal returns on state capacity investment are still high. It is also true if the state assesses that the economic shock that increases their revenue should make the population richer as well, meaning there is less demand for public goods. In this case, the economic shock substitutes for state capacity, enabling the state to invest revenue elsewhere or keep it for themselves.
+
+Finally, some state may include public goods provision or state capacity within their utility function--by endogenizing state capacity, these states consider capacity to be an end in itself, not just a means to revenue generation. These states are not revenue-maximizers, but resilience-maximizers. In the case of increased revenue, even when it may not be revenue-maximizing to do so, such states will invest further in public goods provision.
+
+\subsection{The Revenue-resilience Tradeoff}
+
+Which story is more convincing? I examine a case that controls for many of these confounding variables: Inner Mongolia from 2010-2013.
+
+\section{Methodology}
+
+From 2010 to 2011, China's national government imposed export controls on rare-earth elements, spiking the price of neodymium, dysprosium, and other rare earth elements (REEs) between 200-400\%. The effect of one country's export controls on global prices was so severe because China produces the vast majority of the world's supply of these resources. [I need citations and descriptive charts for these, which I will add]. In fact, just one specific province of China--Inner Mongolia--produced (and still produces) nearly 40\% of the world's supply. The spike in REE prices, which lasted from 2010 to 2013, resulted in a huge increase in revenue for the state-owned mining enterprise (Baogang Group) operating the REE mines in Inner Mongolia. Moreover, this increase in revenue was captured almost entirely by the national government (\ref{fig:rev-tsplot}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{POLS503Final_revtsplot.png}
+    \caption{No discontinuities in provincial revenue indicate that no extra revenue from the REE price shock was captured by provincial governments.}
+    \label{fig:rev-tsplot}
+\end{figure}
+
+This case presents an ideal scenario for China's national government to devote this increased revenue elsewhere. At the time, Inner Mongolia was one of the more developed provinces of China, and China's government anticipated the revenue shock to be short-term. It would have been revenue-maximizing to reinvest this increased revenue in less developed REE-producing provinces, or even provinces that are underdeveloped but do not produce REEs at all. Moreover, because the revenue shock benefited solely the national government, and minimally affected provincial revenues, the national government (since the provincial tax-dispersion reform in 1994 that allotted a higher portion of responsibility for provincial development to provincial governments) was empowered to make the cross-regional reallocation of revenues that would be revenue-maximizing.
+
+Thus, if China's national government were revenue-maximizing, regardless of whether it is stationary or roving, it should at minimum not have increased national investment in state capacity in Inner Mongolia. I hypothesize the following:
+
+$H_0$: REE price shocks cause no change in national government spending on state capacity in Inner Mongolia from 2010-2013.
+
+$H_1$: REE price shocks cause an increase in national government spending on state capacity in Inner Mongolia from 2010-2013.
+
+A core problem with analyzing this problem is the unavailability of data. China's National Bureau of Statistics and Ministry of Finance do not provide province-specific breakdowns of national spending allocations. Since 1994, most provincial spending is allocated first to provincial governments, who are then tasked with spending on state capacity projects. While this data is readily available, provincial spending is enormous compared to any change in investment from a revenue shock, and in turn severely weakens the power of any test of the effect of this revenue shock. Moreover, provincial government spending is confounded by (and after 1994 depends much more on) other exogenous shocks to provincial government revenue. Finally, most forms of provincial government expenditures are calculated differently pre- and post-2007.
+
+I operationalize national spending on provincial state capacity by measuring the length of new railroads constructed in a given year \footnote{Thanks to the constructive feedback of my peers, I recognize this is not a great measure of national spending on public goods. However, I am still in search of better measure}. To isolate the effect of national spending from provincial spending within a province, I control for one of the few measures of provincial government spending on public services that was not changed in 2007: education. I also control for total provincial government expenditure to control for any exogenous shocks to provincial-level expenditure.
+
+Because of data missingness, I drop Tibet from my synthesis of the counterfactual and impute missing values in the number of hospital beds from five provinces between 2005 to 2007. Because this data is imputed, I do not set any placebo cutoffs to be within this range. I also drop Tianjin from my analysis, since data on its provincial government expenditures is corrupted.
+
+\section{Preliminary Results}
+
+Controlling for provincial expenditure on public goods, I find that national expenditure on railroads in Inner Mongolia increased following the 2010 revenue shock (\ref{fig:SCplot}, "Control"). This effect is not present in the naive model. However, it is robust to a placebo treatment in 2008. The effect is also robust to changing the measure of provincial-level public goods expenditure to the number of hospital beds. \footnote{Most of my results are not especially statistically significant. I plan to include some more controls, but have not yet had time to find and clean the data. I will then present numerical estimates for the effects.}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.65\linewidth]{POLS501Final_SCplot.png}
+    \caption{"Control" controls for Provincial Education Spending}
+    \label{fig:SCplot}
+\end{figure}
+
+\section{Discussion}
+
+My findings suggest that the Chinese state in 2010 was not revenue-maximizing, but rather resilience-maximizing-—prioritizing political stability legitimacy through public goods investment, even when investments in different provinces might have better maximized revenue. This case supports a more nuanced theory of public goods provision in which the state strategically deploys public goods as political instruments.
+
+This has several implications. First, it may contribute to explanations of seemingly disproportionate public spending in regions that are politically sensitive, where the return on investment in fiscal terms may be low, but the return in stability and state or party consolidation is high. A productive line of research may be to evaluate the strength of this effect in democratic states, where dominant parties may prioritize public goods provision in electorally marginal districts. Second, this challenges whether we can simplify away political considerations in political economy models of the state, and specifically whether we can model public goods provision as endogenous to revenue-maximizing incentives. Third, this supports an extensive body of literature that identifies the pre-Xi Jinping Chinese state as one that pursued economic goals at least in part due to its legitimizing effects. Even now, attempts to influence Chinese policy through economic levers may have limited effects if the state values resilience more than fiscal performance.
+
+
+\newpage
+
+%% Use \bibliography{...} if using BibTeX
+%TC:subst \printbibliography \bibliography
+%TC:macro \field [0,1]
+%TC:macro \name [0,0,0,1]
+%TC:macro \list [0,0,1]
+%% Use \printbibliography if using BibLaTeX
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,309 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem*{remark}{Remark}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\IM}{\mathrm{IM}}
+\title{Formal Model of Revenue, Resilience, and Regional Allocation}
+\author{Andrew Wang}
+\date{April 2026}
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+
+In the short-run, the state chooses tax rate $\tau \in [0,1]$ and level of public goods provision $G \ge 0$. It inherits \underline{legal-administrative capacity $L$ (which subsumes direct coercive-administrative capacity)} and fiscal capacity $F$ over the empirical horizon \footnote{Whereas \cite{besleyOriginsStateCapacity2009} consider a dynamic model of investment in state capacity where investment in the present period increases capacity in the following period, I consider $L$ and $F$ to be inherited and not dynamic because the time horizon of most states extend beyond the short time window of the empirical case: legal-administrative capacity and fiscal capacity should not move dramatically enough to be modeled as variables, while the discount rate is not significant enough over the time window studied for there to be any real difference in an immediate or lagged payoff for investment in capacity.}. In the model, capacity therefore shapes current tradeoffs but are not themselves chosen within the period.
+
+The state is constrained by its politically feasible coercive capacity and the revenue it generates. The state allocates coercive capacity and revenue to different purposes, conditional on these constraints, to maximize its objective function.
+
+\section* {Resilience and the Coercion Constraint}
+
+The state uses coercion for three purposes: revenue extraction, policy implementation, and shock management. Coercion used for revenue extraction is $C^R = C^R(\tau,G,F)$: it rises with the tax rate ($C^R_{\tau} > 0$) and falls with fiscal capacity $C^R_F < 0$. It also falls with public-goods provision ($C^R_G < 0$) because public goods increase quasi-voluntary compliance \cite{levi1988}. Thus extraction demands more coercive capacity as the tax rate rises, but less as public goods and fiscal capacity improve compliance and penetration. Coercion used for policy implementation, $C^P = C^P(\Pi,L)$, depends on the amount or ambition of policy the state seeks to implement $\Pi$, and on the inherited legal-administrative capacity of the region. It decreases in the latter term ($C^P_L < 0$).
+
+The state may face some shock with severity $\sigma$, which is any exogenous event that affects the state's coercive capacity. For instance, shocks may include ethnic unrest, natural disasters, or external security threats. Unlike for revenue extraction or policy implementation, the coercion required to manage shocks is completely exogenous. Coercion used for shock management depends on the expected size of shocks and on the state's inherited ability to absorb them. Expected coercion for shock management is $\E[C^S] = \E[C^S(\sigma,L)]$, with the coercion required increasing in the severity of the shock and decreasing in the legal-administrative capacity of the state ($\frac{\partial \E[C^S]}{\partial \sigma} > 0, \qquad \frac{\partial \E[C^S]}{\partial L} < 0$).
+
+Total coercive demand is therefore
+\begin{equation}
+C^{tot} = C^R + C^P + \E[C^S].
+\end{equation}
+
+The state is constrained by a maximum politically feasible level of coercion. This is not to say that there exists some clear threshold beyond which the state cannot coerce; rather, this captures the natural intuition that the state cannot coerce infinitely or recklessly. Indeed, the coercion constraint should rarely, if ever, bind in equilibrium. A state that values leaving reserve capacity available for larger-than-expected shocks or unexpected policy demands also prefers to operate below the coercive frontier because at some point the marginal value of preserved excess coercion will exceed the marginal value of additional extraction.
+
+\subsection{Maximum coercive capacity and resilience}
+
+This observation -- that the state rarely exerts the maximum feasible level of coercion -- is the substantive basis for defining resilience as excess coercive capacity. The state wants a reserve because a risk-averse state understands that expected shocks may understate actual shocks, and because future policy demands may exceed what was anticipated at the time of extraction. In this sense, resilience is the ruler's ability to remain governable under uncertainty. In the China case, it is not that the center fears imminent collapse in Inner Mongolia, but that the center should still value leaving itself more reserve capacity in more politically sensitive regions.
+
+Let the maximum feasible coercive capacity be
+\begin{equation}
+\bar C = \bar C_0 + \phi_G G + \phi_L L,
+\end{equation}
+where all $\phi$'s are positive. Public goods may raise the feasible coercive-administrative ceiling indirectly by extending state reach and lowering transaction costs, while \underline{legal-administrative capacity $L$ captures the inherited coercive-administrative stock of the region}.
+
+I thus define resilience as
+\begin{equation}
+Z = \bar C - C^{tot},
+\end{equation}
+and substituting in yields
+\begin{equation}
+Z = \bar C_0 + \phi_G G + \phi_L L - C^R(\tau,G,F) - C^P(\Pi,L) - \E[C^S(\sigma,L)].
+\end{equation}
+
+\section{Revenue and the Budget Constraint}
+
+Let output be
+\begin{equation}
+Y = Y(\tau,G,L,F,\varepsilon),
+\end{equation}
+with
+\begin{equation}
+Y_{\tau} < 0, \qquad Y_G > 0, \qquad Y_L > 0, \qquad Y_F \ge 0.
+\end{equation}
+
+These reflect natural assumptions: higher taxes depress output, while public goods and state capacity raise output. The shock term $\varepsilon$ captures exogenous changes in output, such as a revenue windfall for state-owned enterprises.
+
+Gross revenue is
+\begin{equation}
+R^g = \tau Y(\tau,G,L,F,\varepsilon)\chi(F),
+\end{equation}
+where $\chi(F) \in (0,1]$ is the fraction of taxable output the state can actually collect, with $\chi'(F)>0$.
+
+The state can allocate revenue for \underline{two} purposes as well: providing public goods \underline{and} exerting coercion. Let $\Psi(C^{tot})$ be the resource cost of coercion, increasing and convex in $C^{tot}$. Then the within-period resource constraint is
+\begin{equation}
+G + \Psi(C^{tot}) \le R^g.
+\end{equation}
+
+\section{The State Objective}
+
+The state maximizes objective function
+\begin{align}
+U(\tau,G) =& (1-\omega)R^g + \omega Z, \\
+& \text{s.t.} \quad G + \Psi(C^{tot}) \le R^g && \text{Budget Constraint} \\
+& \text{s.t.} \quad Z \ge 0 && \text{Coercion Constraint}
+\label{eq:jointobj}
+\end{align}
+with $\omega \in [0,1]$.
+
+This nests two ideal types at the extrema of $\omega$, whereas most states likely fall somewhere between:
+\begin{align*}
+\omega &= 0 && \text{pure revenue maximization},\\
+\omega &\in (0,1) && \text{joint revenue--resilience maximization}, \\
+\omega &= 1 && \text{pure resilience maximization}
+\end{align*}
+
+\subsection{Olson and Levi: Ideal-Type Revenue-Maximizing Rulers}
+
+The revenue-maximizing state can be considered an ideal type of this model where $\omega = 0$.
+
+\underline{The coercion constraint binds at $\omega=0$ only under an additional interiority-of-slack condition stated formally below. More generally, once $\omega>0$, positive weight on slack makes the coercion constraint less likely to bind, though it may still bind in sufficiently adverse environments.} The intuition is simple. Additional coercion may increase extraction, but it also directly reduces resilience by shrinking $Z$. So long as $\omega > 0$, then the marginal extractive return to more coercion declines while the value of preserved excess coercive capacity remains positive. Therefore, \underline{if the state is able to buy a little extra slack by moving away from the coercive frontier, the optimum occurs at an interior point before the state reaches the coercive frontier.} Substantively, actual shocks may exceed expected shocks and policy demands may expand unexpectedly. Thus even a coercively capable state, as long as it values resilience to some significant degree, will rationally choose to operate below its maximum feasible coercive capacity.
+
+Mathematically, the revenue constraint does bind in all cases. However, in the case where $\omega = 0$, \underline{the associated Lagrangian of the maximization of gross revenue subject to a budget constraint is equivalent, up to positive affine rescaling, to a net-revenue-like objective in which expenditure is weighted by a positive shadow cost.} That is, consider
+\begin{align*}
+\max_{\tau, G} \;& R^g \\
+\text{s.t.} \;& G + \Psi(C^{tot}) \le R^g.
+\end{align*}
+The associated Lagrangian is
+\begin{align*}
+\mathcal{L}(\tau,G,\lambda)
+&= R^g - \lambda \Big((G + \Psi(C^{tot})) - R^g\Big) \\
+&= (1+\lambda)R^g - \lambda\big(G + \Psi(C^{tot})\big), \qquad \lambda \ge 0.
+\end{align*}
+Since dividing by the positive constant $1+\lambda$ does not change the argmax, this is equivalent in the Lagrangian sense to maximizing
+\begin{equation}
+R^g - \frac{\lambda}{1+\lambda}\big(G + \Psi(C^{tot})\big).
+\end{equation}
+Therefore the revenue-maximizing state, subject to the budget constraint, is a net-revenue maximizer where net revenue is $R^g_{\text{net}} = R^g - \phi \, \text{Cost}, \; \phi > 0$.
+
+Thus the two ideal types are
+\begin{align*}
+\max_{\tau, G} \;& R^g_{\text{net}} && \text{pure revenue maximization},\\
+\text{s.t.} \;& Z \ge 0 \\
+\max_{\tau, G} \;& Z && \text{pure resilience maximization}. \\
+\text{s.t.} \;& G + \Psi(C^{tot}) \le R^g
+\end{align*}
+The pure revenue maximizer can be interpreted as Olson's stationary bandit -- maximizing net revenue subject to a coercion constraint. Olson's roving bandit, then, is a net revenue maximizer exempt from the coercion constraint, since they need not maintain their political survival.
+
+Levi’s ruler can also be interpreted as maximizing net revenue subject to political and coercive feasibility. Though her original argument characterizes the ruler as maximizing gross extraction subject to some constraint on political feasibility, and thus treats expenditure as analytically secondary to the primary extractive problem, a practical implementation of her model is not especially different from an Olsonian stationary bandit. My model preserves her observations on bargaining power and quasi-voluntary compliance.
+
+\subsection{China as a Resilience-Maximizer}
+
+\begin{proposition}
+Suppose $\omega=1$, $\;C^R_\tau>0$, $\;C^R_G<0$, and $\phi_G>0$. Then the state's problem is
+\[
+\max_{\tau,G} Z(\tau,G)
+\quad \text{s.t.} \quad
+G+\Psi(C^{tot}) \le R^g(\tau,G,L,F,\varepsilon), \qquad Z\ge 0.
+\]
+It follows that:
+\begin{enumerate}
+    \item $\partial Z/\partial \tau = -C^R_\tau <0$, so taxation reduces utility directly;
+    \item $\partial Z/\partial G = \phi_G - C^R_G >0$, so public goods provision increases utility directly;
+    \item revenue is valued only instrumentally, insofar as it finances $G$ and $\Psi(C^{tot})$.
+\end{enumerate}\label{proposition: comparativestats}
+\end{proposition}
+
+\begin{proposition}\label{prop:tauranking}
+Suppose $\omega=1$, $Z_\tau<0$, and tax revenue enters the pure resilience problem only through the feasibility condition
+\[
+G+\Psi(C^{tot}) \le R^g(\tau,G,L,F,\varepsilon).
+\]
+Let $\tau^{rsl}$ denote the tax rate chosen by the pure resilience maximizer and $\tau^{rev}$ the tax rate chosen by the pure revenue maximizer. Then
+\[
+\tau^{rsl} \le \tau^{rev}
+\]
+whenever there exists a feasible tax rate at or below $\tau^{rev}$ that finances the resilience-maximizing allocation, with strict inequality whenever a strictly lower feasible tax rate exists.
+\end{proposition}
+
+\begin{proposition}\label{prop:bindsonlyomega0}
+Suppose the pure revenue maximizer chooses an allocation on the coercive frontier, so that
+\[
+Z(\tau^{rev},G^{rev})=0.
+\]
+Suppose further that for every $\omega>0$, there exists a feasible neighboring allocation $(\tau',G')$ with $Z(\tau',G')>0$ and
+\[
+(1-\omega)R^g(\tau',G',L,F,\varepsilon)+\omega Z(\tau',G')
+>
+(1-\omega)R^g(\tau^{rev},G^{rev},L,F,\varepsilon)+\omega Z(\tau^{rev},G^{rev}).
+\]
+Then the coercion constraint binds at the optimum only if $\omega=0$.
+\end{proposition}
+
+Therefore the pure resilience maximizer chooses the \underline{lowest feasible} extraction compatible with financing its preferred resilience-enhancing allocation, preserves positive coercive slack whenever feasible, and extracts \underline{weakly} less revenue than a pure revenue maximizer. This is generally consistent with the aforementioned literature on the Chinese state, which even post-liberalization has historically had low taxation, strong public goods, and in turn generally insufficient revenue extraction. This is not to say, of course, that China is a pure resilience-maximizer; nonetheless, these few stylized facts demonstrate the formal logic behind China's present fiscal issues.
+
+\section*{Appendix: Comparative statics and proofs}
+
+\subsection{Proof of \ref{proposition: comparativestats}}
+
+\begin{proposition}
+Suppose $\omega = 1$, $C^R_\tau > 0$, $C^R_G < 0$, and $\phi_G>0$. Consider the state's problem
+\begin{align}
+\max_{\tau,G} \quad & Z(\tau,G) \\
+\text{s.t.} \quad & G + \Psi(C^{tot}) \le R^g(\tau,G,L,F,\varepsilon), \\
+& Z(\tau,G) \ge 0,
+\end{align}
+where
+\begin{align}
+Z(\tau,G)
+&= \bar C_0 + \phi_G G + \phi_L L
+- C^R(\tau,G,F) - C^P(\Pi,L) - \E[C^S(\sigma,L)].
+\end{align}
+Then:
+\begin{enumerate}
+    \item $\partial Z/\partial \tau < 0$, so taxation reduces utility directly;
+    \item $\partial Z/\partial G > 0$, so public goods provision increases utility directly;
+    \item revenue is valued only instrumentally, insofar as it finances $G$ and $\Psi(C^{tot})$.
+\end{enumerate}
+Therefore, the pure resilience maximizer chooses the minimum extraction compatible with financing its preferred resilience-enhancing allocation and preserves positive coercive slack whenever feasible.
+\end{proposition}
+
+\begin{proof}
+When $\omega=1$, the state maximizes resilience alone. Since
+\begin{align}
+U(\tau,G) = Z(\tau,G),
+\end{align}
+the objective is
+\begin{align}
+\max_{\tau,G} \quad Z(\tau,G)
+\end{align}
+subject to the budget and coercion constraints.
+
+First, differentiate $Z$ with respect to the tax rate $\tau$. Since only $C^R(\tau,G,F)$ depends on $\tau$ among the endogenous terms in $Z$,
+\begin{align}
+\frac{\partial Z}{\partial \tau}
+= - \frac{\partial C^R(\tau,G,F)}{\partial \tau}.
+\end{align}
+By assumption, $C^R_\tau>0$. Hence
+\begin{align}
+\frac{\partial Z}{\partial \tau} < 0.
+\end{align}
+Thus, taxation reduces resilience directly everywhere in the interior. Absent the budget constraint, the state would therefore set $\tau$ at its lowest feasible value.
+
+Second, differentiate $Z$ with respect to public goods provision $G$. We obtain
+\begin{align}
+\frac{\partial Z}{\partial G}
+= \phi_G - \frac{\partial C^R(\tau,G,F)}{\partial G}.
+\end{align}
+By assumption, $\phi_G>0$ and $C^R_G<0$. Therefore
+\begin{align}
+\frac{\partial Z}{\partial G}
+= \phi_G - C^R_G
+= \phi_G + |C^R_G|
+> 0.
+\end{align}
+So public goods provision raises resilience directly in two ways: it increases the feasible coercive ceiling through $\phi_G$, and it lowers extraction-related coercive demand through $C^R_G<0$.
+
+These two derivative results imply that, in the pure resilience case, the state dislikes taxation in itself but likes public goods provision in itself. Revenue therefore has no direct value in the objective function. It matters only because the budget constraint requires that public goods and coercive expenditure be financed out of gross revenue:
+\begin{align}
+G + \Psi(C^{tot}) \le R^g(\tau,G,L,F,\varepsilon).
+\end{align}
+Accordingly, the state raises revenue only instrumentally, to the extent necessary to finance the bundle of expenditures that increases resilience.
+
+To show that extraction is minimized subject to feasibility, let $(\tau^*,G^*)$ denote an optimal solution to the pure resilience problem. Since $\partial Z/\partial \tau<0$, any increase in $\tau$ lowers utility directly. Therefore, if there existed some alternative feasible pair $(\tilde\tau,G^*)$ with $\tilde\tau<\tau^*$ that still satisfied the budget constraint, then
+\begin{align}
+Z(\tilde\tau,G^*) > Z(\tau^*,G^*),
+\end{align}
+contradicting optimality of $(\tau^*,G^*)$. Hence $\tau^*$ must be the smallest tax rate consistent with financing the chosen resilience-enhancing allocation. In this sense, the pure resilience maximizer chooses minimum extraction conditional on feasibility.
+
+Next, consider coercive slack. Since the objective is $Z$ itself, any feasible increase in slack strictly raises utility. Therefore, whenever there exists a feasible choice with $Z>0$, the state prefers such a point to any otherwise identical point with lower slack. The constraint $Z\ge 0$ binds only if the budget and technological environment are so restrictive that no feasible allocation with positive slack exists. Otherwise, the optimum is interior in the sense that $Z^*>0$.
+\end{proof}
+
+\subsection{Proof of Proposition \ref{prop:tauranking}}
+
+\begin{proof}
+Let $(\tau^{rsl},G^{rsl})$ solve the pure resilience problem. By assumption, $Z_\tau<0$, so holding fixed any feasible allocation of public goods, a lower tax rate strictly increases the objective. Revenue has no direct value in the objective and matters only through feasibility:
+\begin{equation}
+G+\Psi(C^{tot}) \le R^g(\tau,G,L,F,\varepsilon).
+\end{equation}
+Therefore the pure resilience maximizer chooses, for its preferred allocation, the smallest tax rate that satisfies feasibility.
+
+Now let $\tau^{rev}$ denote the tax rate chosen by the pure revenue maximizer. If there exists a feasible tax rate $\tilde \tau \le \tau^{rev}$ that finances the resilience-maximizing allocation, then any candidate with tax rate above $\tilde\tau$ cannot be optimal for the pure resilience maximizer, because lowering taxation from that candidate to $\tilde\tau$ weakly relaxes the direct utility loss from taxation while preserving feasibility. Hence
+\begin{equation}
+\tau^{rsl} \le \tau^{rev}.
+\end{equation}
+If, moreover, there exists a strictly lower feasible tax rate $\tilde\tau < \tau^{rev}$ that finances the resilience-maximizing allocation, then optimality of the pure resilience maximizer implies
+\begin{equation}
+\tau^{rsl} < \tau^{rev}.
+\end{equation}
+Thus the pure resilience maximizer chooses a weakly lower tax rate than the pure revenue maximizer whenever such a feasible tax rate exists, with strict inequality whenever feasibility holds strictly below the revenue-maximizing tax rate.
+\end{proof}
+
+\subsection{Proof of Proposition \ref{prop:bindsonlyomega0}}
+
+\begin{proof}
+By assumption, the pure revenue maximizer chooses an allocation on the coercive frontier:
+\begin{equation}
+Z(\tau^{rev},G^{rev})=0.
+\end{equation}
+Consider now any $\omega>0$. By the maintained assumption, there exists a feasible neighboring allocation $(\tau',G')$ with strictly positive slack, $Z(\tau',G')>0$, such that
+\begin{equation}
+(1-\omega)R^g(\tau',G',L,F,\varepsilon)+\omega Z(\tau',G')
+>
+(1-\omega)R^g(\tau^{rev},G^{rev},L,F,\varepsilon)+\omega Z(\tau^{rev},G^{rev}).
+\end{equation}
+Since the boundary allocation on the coercive frontier is strictly dominated for every $\omega>0$, it cannot be optimal when the state places any positive weight on resilience. Therefore the optimum for every $\omega>0$ must satisfy
+\begin{equation}
+Z(\tau^*(\omega),G^*(\omega))>0,
+\end{equation}
+so the coercion constraint does not bind.
+
+It follows that the coercion constraint binds at the optimum only in the pure revenue-maximizing case $\omega=0$.
+\end{proof}
+
+\section*{References}
+
+Besley, Timothy, and Torsten Persson. 2009. ``The Origins of State Capacity.'' \emph{American Economic Review} 99(4): 1218--1244.
+
+Levi, Margaret. 1988. \emph{Of Rule and Revenue}. Berkeley: University of California Press.
+
+\end{document}
